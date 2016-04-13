@@ -1,7 +1,7 @@
 FROM java:8
 
 # Set Maven vars
-ENV MAVEN_VERSION 3.0.5
+ENV MAVEN_VERSION 3.3.9
 ENV MAVEN_HOME /usr/share/maven
 
 # Install Maven
@@ -14,7 +14,7 @@ RUN mkdir /src && \
     rm -rf /src
 
 # Set base Spark vars
-ENV SPARK_VERSION 1.4.1
+ENV SPARK_VERSION 1.6.1
 ENV SPARK_HOME /usr/local/spark
 
 # Download and compile Apache Spark
